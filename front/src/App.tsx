@@ -17,6 +17,12 @@ const config = {
   },
 };
 
+const fetchDog = () => {
+  fetch("https://dog.ceo/api/breeds/image/random").then((response) => {
+    console.log(response);
+  });
+};
+
 const onClick = () => {
   console.log("process.env: ", process.env);
 
@@ -25,11 +31,13 @@ const onClick = () => {
   // axios
   //   .get(`${process.env.REACT_APP_BASE_URL}/curations`)
   //   .then((res) => console.log(res));
-  axios
-    // .get("https://api.nordot.jp/v1.0/contentsholder/units.info", config)
-    .get("https://api.nordot.jp/v1.0/curator/curations.list", config)
-    .then((res) => console.log("res: ", res))
-    .catch((err) => console.log("err: ", err));
+  // axios
+  //   // .get("https://api.nordot.jp/v1.0/contentsholder/units.info", config)
+  //   .get("https://api.nordot.jp/v1.0/curator/curations.list", config)
+  //   .then((res) => console.log("res: ", res))
+  //   .catch((err) => console.log("err: ", err));
+  fetchDog();
+
 };
 function App() {
   return (
