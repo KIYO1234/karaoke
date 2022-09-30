@@ -46,6 +46,7 @@ function App() {
       <Button onClick={onClick} />
       <div>親リポジトリ</div>
       <div>submodule用変更テスト</div>
+      <div>clone-testがmainブランチをsubmoduleとして追加</div>
     </>
   );
 }
