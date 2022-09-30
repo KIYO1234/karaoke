@@ -45,7 +45,7 @@ function App() {
       <h1 className="text-red-500 font-bold">demo</h1>
       <Button onClick={onClick} />
       <div>親リポジトリ</div>
-      <div>testブランチ</div>
+      <div>testブランチを変更しました</div>
     </>
   );
 }
