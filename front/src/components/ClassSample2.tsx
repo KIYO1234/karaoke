@@ -18,6 +18,9 @@ export class ClassSample2 extends ClassSample {
   squeeze(): void {
     console.log("wow")
   }
+  sample(): void {
+    console.log("mainブランチでの修正");
+  }
 }
 
 new ClassSample2();
