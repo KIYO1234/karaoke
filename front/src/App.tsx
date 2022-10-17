@@ -3,9 +3,31 @@ import axios from "axios";
 
 import "./App.css";
 import Button from "./components/Button";
+import { ClassSample2 } from "./components/ClassSample2";
+import { ClassSample } from "./components";
 
+// console.log("ClassSample: ", ClassSample);
+
+
+const child = new ClassSample2();
+// child.run();
+// child.squeeze();
+// console.log(child.generate());
 // axios.defaults.headers.post["Content-Type"] = "application/json;charset=utf-8";
 // axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+
+const map = new Map();
+map.set("color", "yellow");
+map.set({color: "red"}, "valueSample");
+// const entries = map.entries();
+// console.log("map: ", map);
+// console.log("entries: ", entries);
+// for(const [key, value] of map.entries()) {
+//   console.log(obj);
+  
+// }
+// entries.forEach(obj => console.log(obj));
+
 
 const config = {
   headers: {
