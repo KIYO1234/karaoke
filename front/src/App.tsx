@@ -3,13 +3,11 @@ import axios from "axios";
 
 import "./App.css";
 import Button from "./components/Button";
-import { ClassSample2 } from "./components/ClassSample2";
 import { ClassSample } from "./components";
 
 // console.log("ClassSample: ", ClassSample);
 
 
-const child = new ClassSample2();
 // child.run();
 // child.squeeze();
 // console.log(child.generate());
